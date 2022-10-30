@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Ãæµ¹");
         if (other.gameObject.tag == "obstacle")
         {
             other.gameObject.SetActive(false);
