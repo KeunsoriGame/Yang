@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonA
         m_Mode: 1
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonC
         m_Mode: 1
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonB
         m_Mode: 1
@@ -808,7 +808,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227165979}
   m_CullTransparentMesh: 1
---- !u!1 &243688588
+--- !u!1 &359371445
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -816,42 +816,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 243688590}
-  - component: {fileID: 243688589}
+  - component: {fileID: 359371447}
+  - component: {fileID: 359371446}
   m_Layer: 0
-  m_Name: JudgeCommand
+  m_Name: Judge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &243688589
+--- !u!114 &359371446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243688588}
+  m_GameObject: {fileID: 359371445}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7416ef4ebc5d97341b6fa5d2a563c14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  A: {fileID: 2721881954200682656, guid: ddced4c8db4b521459f0848dfa0443b5, type: 3}
-  B: {fileID: 7942989261009931503, guid: f3bbc25dec5ed4347923bcda815da83a, type: 3}
-  C: {fileID: 6799337477346133004, guid: 7ac48e5cfdb13174ba91a39be36cfb29, type: 3}
-  D: {fileID: 1168592012353298982, guid: 53e16cef119a7aa41b88736acb27f732, type: 3}
-  E: {fileID: 2179542390499181250, guid: 4fd63e8b31e630841901825fd4a31806, type: 3}
-  F: {fileID: 7037969683519961063, guid: 04eeaeb5e273960449f3755a701c2fe3, type: 3}
---- !u!4 &243688590
+  state: {fileID: 428214166}
+  i: 0
+--- !u!4 &359371447
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243688588}
+  m_GameObject: {fileID: 359371445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1023.9448, y: 172.7389, z: -256.62225}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1425,7 +1421,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonF
         m_Mode: 1
@@ -1558,7 +1554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonD
         m_Mode: 1
@@ -1691,7 +1687,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 243688589}
+      - m_Target: {fileID: 359371446}
         m_TargetAssemblyTypeName: JudgeCommand, Assembly-CSharp
         m_MethodName: ButtonE
         m_Mode: 1
