@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            this.transform.Translate(-50, 0, 0);
 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            this.transform.Translate(50, 0, 0);
 
         // 카메라 영역 밖 제한
 
@@ -31,7 +35,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("충돌");
         if (other.gameObject.tag == "obstacle")
         {
             other.gameObject.SetActive(false);
