@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - obstacle
-  - item
-  - Falling
+  - A
+  - B
+  - C
+  - E
+  - F
+  - D
   layers:
   - Default
   - TransparentFX
