@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\StartScene\BassStat.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\TimeSliderController.cs" />
+    <Compile Include="Assets\Scripts\MiniGame1\TimeSliderControllerFirst.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
