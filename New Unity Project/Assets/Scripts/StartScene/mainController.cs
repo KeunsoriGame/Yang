@@ -7,7 +7,18 @@ public class mainController : MonoBehaviour
 {
     public void MainToMinigame()
     {
-        SceneManager.LoadScene("MiniGame2");
+        int number = Random.Range(1, 3);
+
+        if (number == 1)
+        {
+            SceneManager.LoadScene("MiniGame1");
+        }
+
+        else if(number == 2)
+        {
+            SceneManager.LoadScene("MiniGame2");
+        }
+        
     }
 
     public void MainToHome()
