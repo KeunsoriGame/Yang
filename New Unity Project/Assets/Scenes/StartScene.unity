@@ -2132,6 +2132,7 @@ GameObject:
   - component: {fileID: 348753406}
   - component: {fileID: 348753407}
   - component: {fileID: 348753408}
+  - component: {fileID: 348753409}
   m_Layer: 5
   m_Name: mainControl
   m_TagString: Untagged
@@ -2182,10 +2183,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede33e4de7a14904c8fe151809cfc3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loading: {fileID: 0}
+  levelText: {fileID: 816493131}
   load: {fileID: 451243732}
   levelup: {fileID: 964665334}
   levelupfail: {fileID: 943745886}
+  statSc: {fileID: 348753405}
+--- !u!114 &348753409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348753405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c990177cf57f82419ab09fc71e45ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  d_ex: 15
+  d_conf: 15
+  g_ex: 100
+  g_conf: 100
+  b_ex: 0
+  b_conf: 0
+  k_ex: 0
+  k_conf: 0
+  v_ex: 0
+  v_conf: 0
 --- !u!1 &366505288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,7 +4633,7 @@ GameObject:
   - component: {fileID: 816493132}
   - component: {fileID: 816493131}
   m_Layer: 5
-  m_Name: level
+  m_Name: levelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4667,7 +4691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBC34\uB4DC \uB808\uBCA8 : "
+  m_Text: 
 --- !u!222 &816493132
 CanvasRenderer:
   m_ObjectHideFlags: 0
