@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\StartScene\GuitarStat.cs" />
-    <Compile Include="Assets\Scripts\MiniGame1\TimeSliderControllerFirst.cs" />
     <Compile Include="Assets\Scripts\StartScene\mainController.cs" />
     <Compile Include="Assets\Scripts\StartScene\VocalStat.cs" />
     <Compile Include="Assets\Scripts\HomeScene\HometoMain.cs" />
@@ -71,7 +70,7 @@
     <Compile Include="Assets\Scripts\StartScene\BassStat.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\TimeSliderController.cs" />
-    <Compile Include="Assets\Scripts\MiniGame2\ReturnHome.cs" />
+    <Compile Include="Assets\Scripts\MiniGame1\TimeSliderControllerFirst.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
