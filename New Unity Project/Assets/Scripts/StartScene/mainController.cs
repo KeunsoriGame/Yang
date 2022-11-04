@@ -5,9 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class mainController : MonoBehaviour
 {
+
     public void MainToMinigame()
     {
-        SceneManager.LoadScene("MiniGame2");
+        int randNum = Random.Range(1, 3);
+        if(randNum == 1)
+        {
+            SceneManager.LoadScene("MiniGame1");
+        }
+
+        else if(randNum == 2)
+        {
+            SceneManager.LoadScene("MiniGame2");
+        }
+
     }
 
     public void MainToHome()
