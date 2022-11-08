@@ -19,7 +19,7 @@ public class RandomSpawn : MonoBehaviour
     {
         creatPoint = transform.position;
         creatPoint.x = 350f;
-        creatPoint.y = 800f;
+        creatPoint.y = 700f;
         transform.position = creatPoint;
 
         for (int i = 0; i < 6; i++)

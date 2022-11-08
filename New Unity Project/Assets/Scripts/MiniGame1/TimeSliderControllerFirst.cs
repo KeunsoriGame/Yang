@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class TimeSliderControllerFirst: MonoBehaviour
 {
     public Slider TimeSld;
-    public GameObject GameOver;
 
     void Start()
     {
@@ -24,8 +23,18 @@ public class TimeSliderControllerFirst: MonoBehaviour
         else
         {
             Time.timeScale = 0;
-            GameOver.gameObject.SetActive(true);
         }
 
+    }
+
+    public void FirstOutCheck()
+    {
+        Time.timeScale = 0;
+        GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(false);
+    }
+
+    public void RefuseOut()
+    {
+        Time.timeScale = 1;
     }
 }

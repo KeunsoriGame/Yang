@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class JudgeCommand : MonoBehaviour
 {
     [SerializeField] GameObject state;
-    public int correctNumber = 0;
-    public int wrongNumber = 0;
+    int correctNumber = 0;
+    int wrongNumber = 0;
 
     public void ButtonA()
     {
@@ -113,5 +113,22 @@ public class JudgeCommand : MonoBehaviour
         GameObject.Find("Canvas").transform.GetChild(4).gameObject.SetActive(false);
         correctNumber = 0;
         wrongNumber = 0;
+    }
+
+    public void FirstOutCheck()
+    {
+        Time.timeScale = 0;
+        GameObject.Find("Canvas").transform.GetChild(7).gameObject.SetActive(true);
+    }
+
+    public void ContinueOut()
+    {
+        GameObject.Find("Canvas").transform.GetChild(8).gameObject.SetActive(true);
+    }
+
+    public void RefuseOut()
+    {
+        Time.timeScale = 1;
+        GameObject.Find("Canvas").transform.GetChild(7).gameObject.SetActive(false);
     }
 }
