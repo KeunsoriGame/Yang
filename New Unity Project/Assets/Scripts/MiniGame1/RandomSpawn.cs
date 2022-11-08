@@ -18,7 +18,7 @@ public class RandomSpawn : MonoBehaviour
     void Spawn()
     {
         creatPoint = transform.position;
-        creatPoint.x = 500f;
+        creatPoint.x = 350f;
         creatPoint.y = 800f;
         transform.position = creatPoint;
 
@@ -29,37 +29,37 @@ public class RandomSpawn : MonoBehaviour
             if (SpawnObj[i] == 1)
             {
                 Instantiate(A, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
 
             else if (SpawnObj[i] == 2)
             {
                 Instantiate(B, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
 
             else if (SpawnObj[i] == 3)
             {
                 Instantiate(C, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
 
             else if (SpawnObj[i] == 4)
             {
                 Instantiate(D, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
 
             else if (SpawnObj[i] == 5)
             {
                 Instantiate(E, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
 
             else
             {
                 Instantiate(F, creatPoint, Quaternion.identity, GameObject.Find("Canvas/Prefab").transform);
-                creatPoint.x += 200f;
+                creatPoint.x += 250f;
             }
         }
     }
