@@ -26,15 +26,4 @@ public class TimeSliderControllerFirst: MonoBehaviour
         }
 
     }
-
-    public void FirstOutCheck()
-    {
-        Time.timeScale = 0;
-        GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(false);
-    }
-
-    public void RefuseOut()
-    {
-        Time.timeScale = 1;
-    }
 }
