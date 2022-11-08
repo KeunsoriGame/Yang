@@ -2171,7 +2171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960d2c48801534446b325cc29c5c5d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 348753405}
 --- !u!114 &348753408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,12 +2202,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   d_ex: 15
   d_conf: 15
-  g_ex: 100
+  g_ex: 15
   g_conf: 100
-  b_ex: 0
-  b_conf: 0
+  b_ex: 20
+  b_conf: 30
   k_ex: 0
-  k_conf: 0
+  k_conf: 50
   v_ex: 0
   v_conf: 0
 --- !u!1 &366505288
@@ -3623,7 +3622,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1589801195}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -4504,7 +4503,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 227718226}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -5216,13 +5215,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 633655219}
   m_FillRect: {fileID: 742993555}
   m_HandleRect: {fileID: 633655218}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -5388,7 +5387,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 510975996}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -7334,7 +7333,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 276328885}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -8475,7 +8474,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1939117249}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -8805,7 +8804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1633635528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8874,7 +8873,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 231876787}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -10385,7 +10384,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1843421488}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:

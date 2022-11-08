@@ -10,8 +10,8 @@ public class KeyboardStat : MonoBehaviour
 
     public void Start()
     {
-        exSlider.value = 47;
-        confiSlider.value = 89;
+        exSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().k_ex;
+        confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().k_conf;
     }
 
     public void exUP()

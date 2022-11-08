@@ -10,8 +10,8 @@ public class VocalStat : MonoBehaviour
 
     public void Start()
     {
-        exSlider.value = 47;
-        confiSlider.value = 89;
+        exSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().v_ex;
+        confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().v_conf;
     }
 
     public void exUP()
