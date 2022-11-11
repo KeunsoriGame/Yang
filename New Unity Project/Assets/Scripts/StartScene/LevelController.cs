@@ -21,6 +21,7 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         levelText.text = "¹êµå Lv." + level.ToString();
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()

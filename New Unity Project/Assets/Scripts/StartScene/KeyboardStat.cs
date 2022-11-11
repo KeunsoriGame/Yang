@@ -14,13 +14,8 @@ public class KeyboardStat : MonoBehaviour
         confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().k_conf;
     }
 
-    public void exUP()
+    public void KeyboardS()
     {
-        exSlider.value = 47;
-    }
-
-    public void confiUP()
-    {
-        confiSlider.value = 89;
+        Stat.Instance.session[3] = 1;
     }
 }

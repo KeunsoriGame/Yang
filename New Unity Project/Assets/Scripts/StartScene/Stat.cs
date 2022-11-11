@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Stat : MonoBehaviour
 {
+    private static Stat instance = null;   
 
     public int d_ex = 0;
     public int d_conf = 0;
@@ -16,11 +17,38 @@ public class Stat : MonoBehaviour
     public int k_conf = 0;
     public int v_ex = 0;
     public int v_conf = 0;
+    public int[] session = new int[5];  // 개인연습한 세션 찾기 용도
 
-
-    void Start()
+    public static Stat Instance
     {
-        
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+
+    void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    void Start()
+    {        
+        for(int i=0; i<5; i++)
+        {
+            session[i] = 0;
+        }
     }
 
     void Update()

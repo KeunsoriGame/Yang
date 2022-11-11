@@ -14,13 +14,8 @@ public class VocalStat : MonoBehaviour
         confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().v_conf;
     }
 
-    public void exUP()
+    public void VocalS()
     {
-        exSlider.value = 47;
-    }
-
-    public void confiUP()
-    {
-        confiSlider.value = 89;
+        Stat.Instance.session[4] = 1;
     }
 }

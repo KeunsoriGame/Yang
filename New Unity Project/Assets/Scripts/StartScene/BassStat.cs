@@ -14,13 +14,8 @@ public class BassStat : MonoBehaviour
         confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().b_conf;
     }
 
-    public void exUP()
+    public void BassS()
     {
-       exSlider.value = 47;
-    }
-
-    public void confiUP()
-    {
-        confiSlider.value = 89;
+        Stat.Instance.session[2] = 1;
     }
 }

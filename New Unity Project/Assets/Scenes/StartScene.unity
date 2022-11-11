@@ -1516,6 +1516,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1973192926}
+        m_TargetAssemblyTypeName: VocalStat, Assembly-CSharp
+        m_MethodName: VocalS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &234789330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2210,6 +2222,7 @@ MonoBehaviour:
   k_conf: 50
   v_ex: 0
   v_conf: 0
+  session: 0000000000000000000000000000000000000000
 --- !u!1 &366505288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,6 +2384,18 @@ MonoBehaviour:
       - m_Target: {fileID: 348753407}
         m_TargetAssemblyTypeName: mainController, Assembly-CSharp
         m_MethodName: MainToMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 339439920}
+        m_TargetAssemblyTypeName: GuitarStat, Assembly-CSharp
+        m_MethodName: GuitarS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5911,6 +5936,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 827982444}
+        m_TargetAssemblyTypeName: BassStat, Assembly-CSharp
+        m_MethodName: BassS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1053328137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6150,6 +6187,18 @@ MonoBehaviour:
       - m_Target: {fileID: 348753407}
         m_TargetAssemblyTypeName: mainController, Assembly-CSharp
         m_MethodName: MainToMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 507129610}
+        m_TargetAssemblyTypeName: KeyboardStat, Assembly-CSharp
+        m_MethodName: KeyboardS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9739,6 +9788,18 @@ MonoBehaviour:
       - m_Target: {fileID: 348753407}
         m_TargetAssemblyTypeName: mainController, Assembly-CSharp
         m_MethodName: MainToMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1750573394}
+        m_TargetAssemblyTypeName: DrumStat, Assembly-CSharp
+        m_MethodName: DrumS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
