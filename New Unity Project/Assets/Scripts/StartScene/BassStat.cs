@@ -10,17 +10,12 @@ public class BassStat : MonoBehaviour
 
     public void Start()
     {
-        exSlider.value = 47;
-        confiSlider.value = 89;
+        exSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().b_ex;
+        confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().b_conf;
     }
 
-    public void exUP()
+    public void BassS()
     {
-        exSlider.value = 47;
-    }
-
-    public void confiUP()
-    {
-        confiSlider.value = 89;
+        Stat.Instance.session[2] = 1;
     }
 }

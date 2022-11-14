@@ -24,5 +24,6 @@ public class mainController : MonoBehaviour
     public void MainToHome()
     {
         SceneManager.LoadScene("HomeScene");
+        
     }
 }

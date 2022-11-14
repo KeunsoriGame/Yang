@@ -10,17 +10,12 @@ public class DrumStat : MonoBehaviour
 
     public void Start()
     {
-        exSlider.value = 47;
-        confiSlider.value = 89;
+        exSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().d_ex;
+        confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().d_conf;
     }
 
-    public void exUP()
+    public void DrumS()
     {
-        exSlider.value = 47;
-    }
-
-    public void confiUP()
-    {
-        confiSlider.value = 89;
+        Stat.Instance.session[0] = 1;
     }
 }

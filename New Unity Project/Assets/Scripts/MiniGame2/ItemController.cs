@@ -13,7 +13,7 @@ public class ItemController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, -1.5f, 0);  // 떨어지는 속도
+        transform.Translate(0, -2.5f, 0);  // 떨어지는 속도
 
         if (transform.position.y < -1.0f)  // 화면 밖으로 나가면 제거
         {

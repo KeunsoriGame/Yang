@@ -1706,6 +1706,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1973192926}
+        m_TargetAssemblyTypeName: VocalStat, Assembly-CSharp
+        m_MethodName: VocalS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &234789330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2392,14 +2404,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   d_ex: 15
   d_conf: 15
-  g_ex: 100
+  g_ex: 15
   g_conf: 100
-  b_ex: 0
-  b_conf: 0
+  b_ex: 20
+  b_conf: 30
   k_ex: 0
-  k_conf: 0
+  k_conf: 50
   v_ex: 0
   v_conf: 0
+  session: 0000000000000000000000000000000000000000
 --- !u!1 &366505288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,6 +2669,18 @@ MonoBehaviour:
       - m_Target: {fileID: 348753407}
         m_TargetAssemblyTypeName: mainController, Assembly-CSharp
         m_MethodName: MainToMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 339439920}
+        m_TargetAssemblyTypeName: GuitarStat, Assembly-CSharp
+        m_MethodName: GuitarS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3912,7 +3937,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1589801195}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -4795,7 +4820,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 227718226}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -5507,13 +5532,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 633655219}
   m_FillRect: {fileID: 742993555}
   m_HandleRect: {fileID: 633655218}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -5679,7 +5704,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 510975996}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -6203,6 +6228,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 827982444}
+        m_TargetAssemblyTypeName: BassStat, Assembly-CSharp
+        m_MethodName: BassS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1053328137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6442,6 +6479,18 @@ MonoBehaviour:
       - m_Target: {fileID: 348753407}
         m_TargetAssemblyTypeName: mainController, Assembly-CSharp
         m_MethodName: MainToMinigame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 507129610}
+        m_TargetAssemblyTypeName: KeyboardStat, Assembly-CSharp
+        m_MethodName: KeyboardS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7720,7 +7769,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 276328885}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -8956,7 +9005,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1939117249}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -9381,7 +9430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1633635528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9450,7 +9499,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 231876787}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -10420,6 +10469,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1750573394}
+        m_TargetAssemblyTypeName: DrumStat, Assembly-CSharp
+        m_MethodName: DrumS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1795937208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11056,7 +11117,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1843421488}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
