@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class Stat : MonoBehaviour
 {
-    private static Stat instance = null;   
+    private static Stat instance = null;
+
+    public int level = 1; // ¹êµå ·¹º§
 
     public int d_ex = 0;
     public int d_conf = 0;

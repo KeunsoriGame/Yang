@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LevelController : MonoBehaviour
 {
     public Text levelText;
-    int level = 1;
+    int level;
 
     int statSum = 0;
 
@@ -20,6 +20,7 @@ public class LevelController : MonoBehaviour
 
     void Start()
     {
+        level = GameObject.Find("mainControl").GetComponent<Stat>().level;
         levelText.text = "¹êµå Lv." + level.ToString();
         DontDestroyOnLoad(gameObject);
     }

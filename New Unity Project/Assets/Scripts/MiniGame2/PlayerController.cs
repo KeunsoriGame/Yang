@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject gameover;
+    public Text Ytext;
+    private int score;
 
     void Start()
     {
-
+        score = 0;
+        Ytext.text = "score : " + score;
     }
 
     void Update()
@@ -84,6 +88,9 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
+
+            score += 1;
+            Ytext.text = "score : " + score;
         }
     }
 }
