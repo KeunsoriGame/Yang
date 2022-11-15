@@ -9,8 +9,13 @@ public class RandomSpawn : MonoBehaviour
 
     Vector2 creatPoint;
     int[] SpawnObj = new int[6];
+    float delayTime;
 
-    void Update()
+    private void Start()
+    {
+        delayTime = Time.fixedDeltaTime;
+    }
+    void FixedUpdate()
     {
         SpawnPlay();
     }
@@ -62,6 +67,9 @@ public class RandomSpawn : MonoBehaviour
                 creatPoint.x += 250f;
             }
         }
+        delayTime = delayTime / 2;
+        Time.fixedDeltaTime = delayTime;
+        Debug.Log(delayTime);
     }
     void SpawnPlay()
     {
