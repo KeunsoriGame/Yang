@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class ReturnHome : MonoBehaviour
 {
     public string FOC, COC;
+    public GameObject ButtonEffect;
     public void RHome()
     {
         SceneManager.LoadScene("StartScene");
+        ButtonEffect.SetActive(false);
+
     }
 
     public void FirstOutCheck()

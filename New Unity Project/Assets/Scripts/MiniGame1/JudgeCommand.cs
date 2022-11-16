@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class JudgeCommand : MonoBehaviour
 {
     [SerializeField] GameObject state;
+    public GameObject Effect;
     int correctNumber = 0;
     int wrongNumber = 0;
 
@@ -238,5 +239,6 @@ public class JudgeCommand : MonoBehaviour
     {
         Time.timeScale = 1;
         GameObject.Find("Canvas").transform.GetChild(7).gameObject.SetActive(false);
+        Effect.SetActive(false);
     }
 }

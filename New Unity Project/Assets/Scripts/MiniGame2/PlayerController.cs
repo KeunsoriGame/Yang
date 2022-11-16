@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject gameover;
-
+    //public AudioSource YellowCrashSound;
+    //public GameObject YellowCrash;
+    public AudioSource RedCrashSound;
+    public GameObject RedCrash;
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -41,6 +45,8 @@ public class PlayerController : MonoBehaviour
             gameover.gameObject.SetActive(true);
             Time.timeScale = 0;
             Debug.Log("Game Over");
+            RedCrash.SetActive(true);
+            RedCrashSound.Play();
 
             int i = 0;
             for (i = 0; i < 5; i++)  // 어떤 세션인지 찾기
@@ -84,6 +90,8 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
+            //YellowCrash.SetActive(true);
+            //YellowCrashSound.Play();
         }
     }
 }
