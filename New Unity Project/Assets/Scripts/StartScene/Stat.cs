@@ -63,4 +63,26 @@ public class Stat : MonoBehaviour
     {
         return d_ex + d_conf + g_ex + g_conf + b_ex + b_conf + k_ex + k_conf + v_ex + v_conf;
     }
+
+    private bool StatCmp(int s)
+    {
+        switch (level)
+        {
+            case 1:
+                return s >= 18;
+            case 2:
+                return s >= 35;
+            case 3:
+                return s >= 58;
+            case 4:
+                return s >= 85;
+            default:
+                return true;
+        }
+    }
+
+    public bool StatCmp2()
+    {
+        return StatCmp(d_ex) && StatCmp(d_conf) && StatCmp(g_ex) && StatCmp(g_conf) && StatCmp(b_ex) && StatCmp(b_conf) && StatCmp(k_ex) && StatCmp(k_conf) && StatCmp(v_ex) && StatCmp(v_conf);
+    }
 }

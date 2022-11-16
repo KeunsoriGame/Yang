@@ -7,16 +7,13 @@ public class LevelController : MonoBehaviour
 {
     public Text levelText;
     int level;
-
-    int statSum = 0;
+    int statSum;
 
     public GameObject load;
     public GameObject levelup;
     public GameObject levelupfail;
     public GameObject statSc;
 
-
-    
 
     void Start()
     {
@@ -36,7 +33,7 @@ public class LevelController : MonoBehaviour
 
         statSum = statSc.GetComponent<Stat>().GetStatSum();
 
-        if (LevelCmp(statSum))
+        if (LevelCmp1(statSum) && GameObject.Find("mainControl").GetComponent<Stat>().StatCmp2())
         {
             Invoke("LevelUP", 3f);
             level++;
@@ -60,7 +57,7 @@ public class LevelController : MonoBehaviour
         levelupfail.SetActive(true);
     }
 
-    bool LevelCmp(int sum) // 레벨 별 조건과 스탯 합 비교
+    bool LevelCmp1(int sum) // 레벨 별 조건과 스탯 합 비교
     {
         int s = sum;
         switch (level)
@@ -77,7 +74,5 @@ public class LevelController : MonoBehaviour
                 return true;
         }
     }
-
-   
 
 }
