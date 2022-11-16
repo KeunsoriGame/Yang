@@ -7,6 +7,7 @@ public class JudgeCommand : MonoBehaviour
 {
     [SerializeField] GameObject state;
     public GameObject Effect;
+    public GameObject ButtonSound;
     int correctNumber = 0;
     int wrongNumber = 0;
 
@@ -104,6 +105,7 @@ public class JudgeCommand : MonoBehaviour
 
     public void ButtonD()
     {
+        ButtonSound.GetComponent<ButtonAudioController>().BassSound();
         if (state.transform.GetChild(correctNumber).name == "D(Clone)")
         {
             state.transform.GetChild(correctNumber).gameObject.SetActive(false);
@@ -120,6 +122,7 @@ public class JudgeCommand : MonoBehaviour
     {
         if (Input.GetKeyDown("d"))
         {
+            ButtonSound.GetComponent<ButtonAudioController>().BassSound();
             if (state.transform.GetChild(correctNumber).name == "D(Clone)")
             {
                 state.transform.GetChild(correctNumber).gameObject.SetActive(false);
@@ -135,6 +138,7 @@ public class JudgeCommand : MonoBehaviour
 
     public void ButtonE()
     {
+        ButtonSound.GetComponent<ButtonAudioController>().KeyboardSound();
         if (state.transform.GetChild(correctNumber).name == "E(Clone)")
         {
             state.transform.GetChild(correctNumber).gameObject.SetActive(false);
@@ -151,6 +155,7 @@ public class JudgeCommand : MonoBehaviour
     {
         if (Input.GetKeyDown("e"))
         {
+            ButtonSound.GetComponent<ButtonAudioController>().KeyboardSound();
             if (state.transform.GetChild(correctNumber).name == "E(Clone)")
             {
                 state.transform.GetChild(correctNumber).gameObject.SetActive(false);
@@ -166,6 +171,7 @@ public class JudgeCommand : MonoBehaviour
 
     public void ButtonF()
     {
+        ButtonSound.GetComponent<ButtonAudioController>().DrumSound();
         if (state.transform.GetChild(correctNumber).name == "F(Clone)")
         {
             state.transform.GetChild(correctNumber).gameObject.SetActive(false);
@@ -182,6 +188,7 @@ public class JudgeCommand : MonoBehaviour
     {
         if (Input.GetKeyDown("f"))
         {
+            ButtonSound.GetComponent<ButtonAudioController>().DrumSound();
             if (state.transform.GetChild(correctNumber).name == "F(Clone)")
             {
                 state.transform.GetChild(correctNumber).gameObject.SetActive(false);
