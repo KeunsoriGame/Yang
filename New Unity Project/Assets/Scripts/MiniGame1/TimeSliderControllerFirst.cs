@@ -11,11 +11,12 @@ public class TimeSliderControllerFirst: MonoBehaviour
     {
         TimeSld = GetComponent<Slider>();
         TimeSld.value = 0;
+        TimeSld.maxValue = 16;
     }
 
     void Update()
     {
-        if (TimeSld.value < 60)
+        if (TimeSld.value < float.MaxValue)
         {
             TimeSld.value += Time.deltaTime;
         }

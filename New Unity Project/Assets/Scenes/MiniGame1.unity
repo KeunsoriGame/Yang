@@ -914,6 +914,7 @@ MonoBehaviour:
   D: {fileID: 1168592012353298982, guid: 53e16cef119a7aa41b88736acb27f732, type: 3}
   E: {fileID: 2179542390499181250, guid: 4fd63e8b31e630841901825fd4a31806, type: 3}
   F: {fileID: 7037969683519961063, guid: 04eeaeb5e273960449f3755a701c2fe3, type: 3}
+  TimeSlider: {fileID: 214441502}
 --- !u!4 &208904526
 Transform:
   m_ObjectHideFlags: 0
@@ -1026,7 +1027,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 60
+  m_MaxValue: 16
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
