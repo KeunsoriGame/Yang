@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\MiniGame2\ObstacleController.cs" />
     <Compile Include="Assets\Scripts\StartScene\DrumStat.cs" />
     <Compile Include="Assets\Scripts\StartScene\LevelController.cs" />
+    <Compile Include="Assets\Scripts\MiniGame1\ButtonAudioController.cs" />
     <Compile Include="Assets\Scripts\MiniGame1\RandomSpawn.cs" />
     <Compile Include="Assets\Scripts\StartScene\KeyboardStat.cs" />
     <Compile Include="Assets\Scripts\MiniGame1\JudgeCommand.cs" />
@@ -74,7 +75,7 @@
     <Compile Include="Assets\Scripts\StartScene\BassStat.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
     <Compile Include="Assets\Scripts\MiniGame2\TimeSliderController.cs" />
-    <Compile Include="Assets\Scripts\MiniGame1\ButtonAudioController.cs" />
+    <Compile Include="Assets\Scripts\MiniGame3\StairSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
