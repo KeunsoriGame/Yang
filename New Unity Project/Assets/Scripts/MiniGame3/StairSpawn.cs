@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class StairSpawn : MonoBehaviour
 {
-    GameObject stairPrefab;
+    GameObject rightStairPrefab;
+    GameObject leftStairPrefab;
 
     void Start()
     {
-        stairPrefab = Resources.Load("MiniGame3/RightRotateStair") as GameObject;
-        GameObject stair = MonoBehaviour.Instantiate(stairPrefab);
+        rightStairPrefab = Resources.Load("MiniGame3/RightRotateStair") as GameObject;
+        leftStairPrefab = Resources.Load("MiniGame3/LeftRotateStair") as GameObject;
+        GameObject rightStair = MonoBehaviour.Instantiate(rightStairPrefab);
+        GameObject leftStair = MonoBehaviour.Instantiate(leftStairPrefab);
 
-        Vector3 pos = new Vector3(6.0f, 5.52f, 0);
-        stair.transform.position = pos;
+        Vector3 rpos = new Vector3(6.0f, 5.52f, 0);
+        Vector3 lpos = new Vector3(6.0f, 5.48f, 0);
+        rightStair.transform.position = rpos;
+        leftStair.transform.position = lpos;
     }
 
 
