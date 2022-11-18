@@ -32,6 +32,8 @@ public class mainController : MonoBehaviour
         }
     }
 
+
+    //미니게임으로 씬 전환
     public void MainToMinigame()
     {
         int randNum = Random.Range(1, 3);
@@ -47,6 +49,7 @@ public class mainController : MonoBehaviour
 
     }
 
+    //메인화면으로 씬 전환
     public void MainToHome()
     {
         SceneManager.LoadScene("HomeScene");

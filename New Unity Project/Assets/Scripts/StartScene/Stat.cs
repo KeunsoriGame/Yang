@@ -9,18 +9,15 @@ public class Stat : MonoBehaviour
 
     public int level = 1; // 밴드 레벨
 
-    public int d_ex = 0;
-    public int d_conf = 0;
-    public int g_ex = 0;
-    public int g_conf = 0;
-    public int b_ex = 0;
-    public int b_conf = 0;
-    public int k_ex = 0;
-    public int k_conf = 0;
-    public int v_ex = 0;
-    public int v_conf = 0;
+    public int d_ex, d_conf;
+    public int g_ex, g_conf;
+    public int b_ex, b_conf;
+    public int k_ex, k_conf;
+    public int v_ex, v_conf;
     public int[] session = new int[5];  // 개인연습한 세션 찾기 용도
 
+
+    //싱글톤
     public static Stat Instance
     {
         get
@@ -44,7 +41,10 @@ public class Stat : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        SetData();
     }
+
     void Start()
     {        
         for(int i=0; i<5; i++)
@@ -64,7 +64,7 @@ public class Stat : MonoBehaviour
         return d_ex + d_conf + g_ex + g_conf + b_ex + b_conf + k_ex + k_conf + v_ex + v_conf;
     }
 
-    private bool StatCmp(int s)
+    private bool StatCmp(int s) // 스탯 총합 기준 확인
     {
         switch (level)
         {
@@ -81,8 +81,24 @@ public class Stat : MonoBehaviour
         }
     }
 
-    public bool StatCmp2()
+    public bool StatCmp2()  // 개별 스탯 기준 확인
     {
         return StatCmp(d_ex) && StatCmp(d_conf) && StatCmp(g_ex) && StatCmp(g_conf) && StatCmp(b_ex) && StatCmp(b_conf) && StatCmp(k_ex) && StatCmp(k_conf) && StatCmp(v_ex) && StatCmp(v_conf);
     }
+
+    public void SetData()
+    {
+        level = PlayerPrefs.GetInt("level", 1);
+        d_ex = PlayerPrefs.GetInt("dEx", 15);
+        d_conf = PlayerPrefs.GetInt("dConf", 15);
+        g_ex = PlayerPrefs.GetInt("gEx", 15);
+        g_conf = PlayerPrefs.GetInt("gConf", 15);
+        b_ex = PlayerPrefs.GetInt("bEx", 15);
+        b_conf = PlayerPrefs.GetInt("bConf", 15);
+        k_ex = PlayerPrefs.GetInt("kEx", 15);
+        k_conf = PlayerPrefs.GetInt("kConf", 15);
+        v_ex = PlayerPrefs.GetInt("vEx", 15);
+        v_conf = PlayerPrefs.GetInt("vConf", 15);
+    }
+
 }

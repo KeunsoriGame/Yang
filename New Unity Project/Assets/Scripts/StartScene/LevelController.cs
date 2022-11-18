@@ -49,6 +49,8 @@ public class LevelController : MonoBehaviour
         load.SetActive(false);
         levelup.SetActive(true);
 
+        PlayerPrefs.SetInt("level", level);
+
     }
 
     void LevelUPFail()  // 합주 실패
