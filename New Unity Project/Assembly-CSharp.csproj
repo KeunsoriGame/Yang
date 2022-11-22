@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\HomeScene\HometoMain.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\PlayerController.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\FallGenerator.cs" />
+     <Compile Include="Assets\Scripts\HomeScene\HomeController.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ObstacleController.cs" />
      <Compile Include="Assets\Scripts\StartScene\DrumStat.cs" />
      <Compile Include="Assets\Scripts\StartScene\LevelController.cs" />

@@ -13,7 +13,22 @@ public class ObstacleController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, -2.5f, 0);
+        switch (Stat.Instance.level)
+        {
+            case 1:
+            case 2:
+                transform.Translate(0, -2.5f, 0);
+                break;
+            case 3:
+                transform.Translate(0, -3.0f, 0);
+                break;
+            case 4:
+            case 5:
+                transform.Translate(0, -3.5f, 0);
+                break;
+            default:
+                break;
+        }
 
         if (transform.position.y < -1.0f)
         {
