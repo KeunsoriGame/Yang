@@ -11,11 +11,12 @@ public class TimeSliderControllerFirst: MonoBehaviour
     {
         TimeSld = GetComponent<Slider>();
         TimeSld.value = 0;
+        TimeSld.maxValue = 16;
     }
 
     void Update()
     {
-        if (TimeSld.value < 60)
+        if (TimeSld.value < TimeSld.maxValue)
         {
             TimeSld.value += Time.deltaTime;
         }
@@ -23,6 +24,7 @@ public class TimeSliderControllerFirst: MonoBehaviour
         else
         {
             Time.timeScale = 0;
+            GameObject.Find("Canvas").transform.GetChild(5).gameObject.SetActive(true);
         }
 
     }

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":951.709228515625,"y":493.8171691894531,"z":-344.09368896484377},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":753.2597045898438,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-1.7617225646972657,"y":3.2283992767333986,"z":-5.130680561065674},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":11.65198040008545,"orthographic":true}
+>>>>>>> Baek-1

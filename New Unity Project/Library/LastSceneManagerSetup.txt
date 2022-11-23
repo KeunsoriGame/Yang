@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/StartScene.unity
+=======
+- path: Assets/Scenes/MiniGame3.unity
+>>>>>>> Baek-1
   isLoaded: 1
   isActive: 1
   isSubScene: 0

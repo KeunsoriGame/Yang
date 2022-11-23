@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class mainController : MonoBehaviour
 {
+<<<<<<< HEAD
     private static mainController instance = null;
 
     public static mainController Instance
@@ -34,17 +35,23 @@ public class mainController : MonoBehaviour
 
 
     //미니게임으로 씬 전환
+=======
+    public GameObject ButtonEffect;
+>>>>>>> Baek-1
     public void MainToMinigame()
     {
         int randNum = Random.Range(1, 3);
         if(randNum == 1)
         {
             SceneManager.LoadScene("MiniGame1");
+            ButtonEffect.SetActive(false);
+
         }
 
         else if(randNum == 2)
         {
             SceneManager.LoadScene("MiniGame2");
+            ButtonEffect.SetActive(false);
         }
 
     }
@@ -53,6 +60,6 @@ public class mainController : MonoBehaviour
     public void MainToHome()
     {
         SceneManager.LoadScene("HomeScene");
-        
+        ButtonEffect.SetActive(false);
     }
 }

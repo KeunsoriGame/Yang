@@ -6,6 +6,7 @@ public class RandomSpawn : MonoBehaviour
 {
     [SerializeField] // private 함수를 inspector에서 관리 가능하게 함
     GameObject A, B, C, D, E, F;
+    public GameObject TimeSlider;
 
     Vector2 creatPoint;
     int[] SpawnObj = new int[6];
@@ -68,6 +69,9 @@ public class RandomSpawn : MonoBehaviour
         if (!(GameObject.FindWithTag("A") || GameObject.FindWithTag("B") || GameObject.FindWithTag("C") || GameObject.FindWithTag("D") || GameObject.FindWithTag("E") || GameObject.FindWithTag("F")))
         {
             Spawn();
+            TimeSlider.GetComponent<TimeSliderControllerFirst>().TimeSld.value = 0;
+            TimeSlider.GetComponent<TimeSliderControllerFirst>().TimeSld.maxValue = TimeSlider.GetComponent<TimeSliderControllerFirst>().TimeSld.maxValue - 2;
+            Debug.Log(TimeSlider.GetComponent<TimeSliderControllerFirst>().TimeSld.maxValue);
         }
     }
 }
