@@ -6,24 +6,20 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public GameObject gameover;
-<<<<<<< HEAD
     public Text Ytext;
     private int score;
+
+    public AudioSource YellowCrashSound;
+    public GameObject YellowCrash;
+    public AudioSource RedCrashSound;
+    public GameObject RedCrash;
 
     void Start()
     {
         score = 0;
         Ytext.text = "score : " + score;
-=======
-    //public AudioSource YellowCrashSound;
-    //public GameObject YellowCrash;
-    public AudioSource RedCrashSound;
-    public GameObject RedCrash;
-    void Start()
-    {
-        
->>>>>>> Baek-1
     }
+
 
     void Update()
     {
@@ -110,14 +106,11 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
-<<<<<<< HEAD
 
             score += 1;
             Ytext.text = "score : " + score;
-=======
-            //YellowCrash.SetActive(true);
-            //YellowCrashSound.Play();
->>>>>>> Baek-1
+            YellowCrash.SetActive(true);
+            YellowCrashSound.Play();
         }
     }
 }
