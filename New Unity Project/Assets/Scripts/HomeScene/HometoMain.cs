@@ -10,6 +10,5 @@ public class HometoMain : MonoBehaviour
     public void SceneChange()
     {
         SceneManager.LoadScene("StartScene");
-        ButtonEffect.SetActive(false);
     }
 }
