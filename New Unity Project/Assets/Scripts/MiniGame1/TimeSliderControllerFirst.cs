@@ -11,7 +11,28 @@ public class TimeSliderControllerFirst: MonoBehaviour
     {
         TimeSld = GetComponent<Slider>();
         TimeSld.value = 0;
-        TimeSld.maxValue = 16;
+        //TimeSld.maxValue = 16;
+
+        switch (Stat.Instance.level)
+        {
+            case 1:
+                TimeSld.maxValue = 20;
+                break;
+            case 2:
+                TimeSld.maxValue = 16;
+                break;
+            case 3:
+                TimeSld.maxValue = 14;
+                break;
+            case 4:
+                TimeSld.maxValue = 12;
+                break;
+            case 5:
+                TimeSld.maxValue = 10;
+                break;
+            default:
+                break;
+        }
     }
 
     void Update()
