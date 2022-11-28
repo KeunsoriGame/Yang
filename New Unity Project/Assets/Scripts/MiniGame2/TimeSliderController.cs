@@ -23,13 +23,9 @@ public class TimeSliderController : MonoBehaviour
 
         else
         {
-            Time.timeScale = 0;
-            TimeSld.gameObject.SetActive(false);
-            stageClear.gameObject.SetActive(true);
-            Debug.Log("Stage Clear");
-
+            //½ºÅÈ »ó½Â
             int i = 0;
-            for(i=0; i<5; i++)
+            for (i = 0; i < 5; i++)
             {
                 if (Stat.Instance.session[i] == 1)
                 {
@@ -73,6 +69,12 @@ public class TimeSliderController : MonoBehaviour
                 default:
                     break;
             }
+
+            Time.timeScale = 0;
+            TimeSld.gameObject.SetActive(false);
+            stageClear.gameObject.SetActive(true);
+            Debug.Log("Stage Clear");
+            
         }
 
     }

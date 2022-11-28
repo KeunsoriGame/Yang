@@ -46,6 +46,54 @@ public class TimeSliderControllerFirst: MonoBehaviour
         {
             Time.timeScale = 0;
             GameObject.Find("Canvas").transform.GetChild(5).gameObject.SetActive(true);
+
+            //스탯 하락
+            int i = 0;
+            for (i = 0; i < 5; i++)  // 어떤 세션인지 찾기
+            {
+                if (Stat.Instance.session[i] == 1)
+                {
+                    Stat.Instance.session[i] = 0;
+                    break;
+                }
+            }
+
+            switch (i)
+            {
+                case 0:
+                    Stat.Instance.d_ex -= 3;
+                    Stat.Instance.d_conf -= 3;
+                    PlayerPrefs.SetInt("dEx", Stat.Instance.d_ex);
+                    PlayerPrefs.SetInt("dConf", Stat.Instance.d_conf);
+                    break;
+                case 1:
+                    Stat.Instance.g_ex -= 3;
+                    Stat.Instance.g_conf -= 3;
+                    PlayerPrefs.SetInt("gEx", Stat.Instance.g_ex);
+                    PlayerPrefs.SetInt("gConf", Stat.Instance.g_conf);
+                    break;
+                case 2:
+                    Stat.Instance.b_ex -= 3;
+                    Stat.Instance.b_conf -= 3;
+                    PlayerPrefs.SetInt("bEx", Stat.Instance.b_ex);
+                    PlayerPrefs.SetInt("bConf", Stat.Instance.b_conf);
+                    break;
+                case 3:
+                    Stat.Instance.k_ex -= 3;
+                    Stat.Instance.k_conf -= 3;
+                    PlayerPrefs.SetInt("kEx", Stat.Instance.k_ex);
+                    PlayerPrefs.SetInt("kConf", Stat.Instance.k_conf);
+                    break;
+                case 4:
+                    Stat.Instance.v_ex -= 3;
+                    Stat.Instance.v_conf -= 3;
+                    PlayerPrefs.SetInt("vEx", Stat.Instance.v_ex);
+                    PlayerPrefs.SetInt("vConf", Stat.Instance.v_conf);
+                    break;
+                default:
+                    break;
+            }
+            
         }
 
     }

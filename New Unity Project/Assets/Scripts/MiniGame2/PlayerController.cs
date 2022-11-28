@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject gameover;
-    public Text Ytext;
-    private int score;
+    public GameObject gameover; // 게임오버 팝업창
+    public Text Ytext; // score 텍스트
+    private int score; // 아이템 획득 횟수
 
     public AudioSource YellowCrashSound;
     public GameObject YellowCrash;
@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
             RedCrash.SetActive(true);
             RedCrashSound.Play();
 
+
+            //스탯 하락
             int i = 0;
             for (i = 0; i < 5; i++)  // 어떤 세션인지 찾기
             {
@@ -107,6 +109,7 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
 
+            //아이템 획득 횟수 표시
             score += 1;
             Ytext.text = "score : " + score;
             YellowCrash.SetActive(true);
