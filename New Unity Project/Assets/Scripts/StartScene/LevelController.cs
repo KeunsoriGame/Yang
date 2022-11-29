@@ -12,14 +12,14 @@ public class LevelController : MonoBehaviour
     public GameObject load;
     public GameObject levelup;
     public GameObject levelupfail;
-    public GameObject statSc;
+    
 
 
     void Start()
     {
         level = GameObject.Find("mainControl").GetComponent<Stat>().level;
         levelText.text = "밴드 Lv." + level.ToString();
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     void Update()
@@ -31,7 +31,7 @@ public class LevelController : MonoBehaviour
     {
         load.SetActive(true);
 
-        statSum = statSc.GetComponent<Stat>().GetStatSum();
+        statSum = GameObject.Find("mainControl").GetComponent<Stat>().GetStatSum();
 
         if (LevelCmp1(statSum) && GameObject.Find("mainControl").GetComponent<Stat>().StatCmp2())
         {
@@ -55,9 +55,10 @@ public class LevelController : MonoBehaviour
 
     void LevelUPFail()  // 합주 실패
     {
-        load.SetActive(false);
+        load.SetActive(false);;
         levelupfail.SetActive(true);
     }
+
 
     bool LevelCmp1(int sum) // 레벨 별 조건과 스탯 합 비교
     {
