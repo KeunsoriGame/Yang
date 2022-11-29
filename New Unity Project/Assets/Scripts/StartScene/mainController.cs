@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class mainController : MonoBehaviour
 {
+   /*
     private static mainController instance = null;
 
     public static mainController Instance
@@ -31,7 +32,7 @@ public class mainController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
+   */
 
     //미니게임으로 씬 전환
     public GameObject ButtonEffect;

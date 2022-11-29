@@ -12,8 +12,8 @@ public class DrumStat : MonoBehaviour
 
     public void Start()
     {
-        exSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().d_ex;
-        confiSlider.value = GameObject.Find("mainControl").GetComponent<Stat>().d_conf;
+        exSlider.value = GameObject.Find("Stat").GetComponent<Stat>().d_ex;
+        confiSlider.value = GameObject.Find("Stat").GetComponent<Stat>().d_conf;
 
         exT.text = exSlider.value + " / 100";
         confT.text = confiSlider.value + " / 100";

@@ -7,9 +7,14 @@ public class TimeSliderController : MonoBehaviour
 {
     public Slider TimeSld;
     public GameObject stageClear;
+    public GameObject mission;
+    public Button button;
 
     void Start()
     {
+        MissionPopup();
+        button.onClick.AddListener(MissionButton);
+
         TimeSld = GetComponent<Slider>();
         TimeSld.value = 0;
     }
@@ -77,5 +82,17 @@ public class TimeSliderController : MonoBehaviour
             
         }
 
+    }
+
+    void MissionPopup()
+    {
+        Time.timeScale = 0f;
+        mission.gameObject.SetActive(true);
+    }
+
+    void MissionButton()
+    {
+        mission.gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

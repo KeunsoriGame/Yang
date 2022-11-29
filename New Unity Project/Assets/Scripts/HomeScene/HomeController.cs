@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HomeController : MonoBehaviour
 {
+    /*
     private static HomeController instance = null;
 
     public static HomeController Instance
@@ -30,7 +31,7 @@ public class HomeController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
+    */
 
     void Update()
     {
@@ -59,6 +60,6 @@ public class HomeController : MonoBehaviour
         PlayerPrefs.SetInt("vConf", 15);
 
 
-        GameObject.Find("mainControl").GetComponent<Stat>().SetData();
+        GameObject.Find("Stat").GetComponent<Stat>().SetData();
     }
 }

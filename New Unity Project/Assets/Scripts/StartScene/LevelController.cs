@@ -17,7 +17,7 @@ public class LevelController : MonoBehaviour
 
     void Start()
     {
-        level = GameObject.Find("mainControl").GetComponent<Stat>().level;
+        level = GameObject.Find("Stat").GetComponent<Stat>().level;
         levelText.text = "¹êµå Lv." + level.ToString();
         //DontDestroyOnLoad(gameObject);
     }
@@ -31,9 +31,9 @@ public class LevelController : MonoBehaviour
     {
         load.SetActive(true);
 
-        statSum = GameObject.Find("mainControl").GetComponent<Stat>().GetStatSum();
+        statSum = GameObject.Find("Stat").GetComponent<Stat>().GetStatSum();
 
-        if (LevelCmp1(statSum) && GameObject.Find("mainControl").GetComponent<Stat>().StatCmp2())
+        if (LevelCmp1(statSum) && GameObject.Find("Stat").GetComponent<Stat>().StatCmp2())
         {
             Invoke("LevelUP", 3f);
             level++;
