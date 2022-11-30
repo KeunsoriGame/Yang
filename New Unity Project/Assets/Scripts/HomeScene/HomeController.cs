@@ -1,42 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HomeController : MonoBehaviour
 {
-    /*
-    private static HomeController instance = null;
-
-    public static HomeController Instance
-    {
-        get
-        {
-            if (null == instance)
-            {
-                return null;
-            }
-            return instance;
-        }
-    }
-
-    void Awake()
-    {
-        if (null == instance)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    */
-
-    void Update()
-    {
-        
-    }
+    public Slider bgmSlider;
+    public Slider effectSlider;
 
     public void DeleteData()
     {
@@ -61,5 +31,16 @@ public class HomeController : MonoBehaviour
 
 
         GameObject.Find("Stat").GetComponent<Stat>().SetData();
+    }
+
+
+    public void SetBGM()
+    {
+        GameObject.Find("SoundManager").GetComponent<SoundControl>().SetBGMVolume(bgmSlider.value);
+    }
+
+    public void SetEffectSound()
+    {
+        GameObject.Find("SoundManager").GetComponent<SoundControl>().SetBGMVolume(effectSlider.value);
     }
 }
