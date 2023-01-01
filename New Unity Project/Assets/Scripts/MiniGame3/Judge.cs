@@ -5,14 +5,20 @@ using UnityEngine;
 public class Judge : MonoBehaviour
 {
     public GameObject[] state;
-
     float x, y;
+
     private void Start()
     {
         Vector2 ClickPos = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
         x = ClickPos.x;
         y = ClickPos.y;
     }
+
+    private void Update()
+    {
+        Click();
+    }
+
     void Click()
     {
         if(Input.GetMouseButtonDown(0))
