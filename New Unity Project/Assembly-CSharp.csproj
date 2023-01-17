@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\MiniGame1\JudgeCommand.cs" />
      <Compile Include="Assets\Scripts\StartScene\Stat.cs" />
      <Compile Include="Assets\Scripts\StartScene\BassStat.cs" />
+     <Compile Include="Assets\Scripts\MiniGame3\CardControl.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\TimeSliderController.cs" />
  <Reference Include="UnityEngine">
