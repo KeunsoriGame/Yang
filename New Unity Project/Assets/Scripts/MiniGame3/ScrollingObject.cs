@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrollingObject : MonoBehaviour
 {
-    public float speed = 50f;
+    public float speed = 8000f;
 
     private void Update()
     {
