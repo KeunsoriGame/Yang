@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class JudgeCommand : MonoBehaviour
 {
@@ -11,14 +10,6 @@ public class JudgeCommand : MonoBehaviour
     public GameObject ButtonSound;
     int correctNumber = 0;
     int wrongNumber = 0;
-    //public Text Gtext; //gold 텍스트
-    //private int gold; //gold 획득 횟수
-
-    /*void Start()
-    {
-        gold = 0;
-        Gtext.text = "Gold : " + gold;
-    }*/
 
     public void ButtonA()
     {
@@ -34,9 +25,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyA() //보컬
+    public void KeyA()
     {
-        if(Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown("a"))
         {
             if (state.transform.GetChild(correctNumber).name == "A(Clone)")
             {
@@ -65,9 +56,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyB() //일렉
+    public void KeyB()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown("b"))
         {
             if (state.transform.GetChild(correctNumber).name == "B(Clone)")
             {
@@ -95,9 +86,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyC() //어쿠
+    public void KeyC()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown("c"))
         {
             if (state.transform.GetChild(correctNumber).name == "C(Clone)")
             {
@@ -127,9 +118,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyD() //베이스
+    public void KeyD()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown("d"))
         {
             ButtonSound.GetComponent<ButtonAudioController>().BassSound();
             if (state.transform.GetChild(correctNumber).name == "D(Clone)")
@@ -160,9 +151,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyE() //키보드
+    public void KeyE()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown("e"))
         {
             ButtonSound.GetComponent<ButtonAudioController>().KeyboardSound();
             if (state.transform.GetChild(correctNumber).name == "E(Clone)")
@@ -193,9 +184,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyF() //드럼
+    public void KeyF()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown("f"))
         {
             ButtonSound.GetComponent<ButtonAudioController>().DrumSound();
             if (state.transform.GetChild(correctNumber).name == "F(Clone)")
@@ -211,18 +202,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    /*public void GoldAdd()
-    {
-        if (correctNumber % 6 == 0)
-        {
-            gold += 1;
-            Gtext.text = "Gold : " + gold.ToString();
-        }
-    }*/
-
     private void Update()
     {
-        if (correctNumber >= 36)
+        if(correctNumber >= 36)
         {
             GameObject.Find("Canvas").transform.GetChild(4).gameObject.SetActive(true);
 
