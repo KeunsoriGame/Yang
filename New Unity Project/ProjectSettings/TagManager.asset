@@ -10,6 +10,12 @@ TagManager:
   - E
   - F
   - D
+  - Falling
+  - obstacle
+  - item
+  - Player3
+  - Ground
+  - Dead
   layers:
   - Default
   - TransparentFX
