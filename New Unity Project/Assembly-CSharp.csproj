@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\StartScene\GuitarStat.cs" />
      <Compile Include="Assets\Scripts\MiniGame1\TimeSliderControllerFirst.cs" />
      <Compile Include="Assets\Scripts\StartScene\mainController.cs" />
+     <Compile Include="Assets\Scripts\MiniGame3\Obstacle.cs" />
      <Compile Include="Assets\Scripts\StartScene\VocalStat.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ReturnHome.cs" />
      <Compile Include="Assets\Scripts\HomeScene\SoundControl.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scripts\HomeScene\HomeController.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ObstacleController.cs" />
      <Compile Include="Assets\Scripts\StartScene\DrumStat.cs" />
+     <Compile Include="Assets\Scripts\MiniGame3\GameManager3.cs" />
      <Compile Include="Assets\Scripts\StartScene\LevelController.cs" />
      <Compile Include="Assets\Scripts\MiniGame1\ButtonAudioController.cs" />
      <Compile Include="Assets\Scripts\MiniGame1\RandomSpawn.cs" />
@@ -69,6 +71,7 @@
      <Compile Include="Assets\Scripts\MiniGame3\ScrollingObject.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\TimeSliderController.cs" />
+     <Compile Include="Assets\Scripts\MiniGame3\GroundSpawner.cs" />
      <Compile Include="Assets\Scripts\MiniGame3\PlayerController3.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

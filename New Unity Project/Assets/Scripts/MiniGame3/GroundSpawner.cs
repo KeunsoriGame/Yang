@@ -49,6 +49,7 @@ public class GroundSpawner : MonoBehaviour
 
             timeBetSpawn = Random.Range(timeBetSpawnMin, timeBetSpawnMax);
 
+            float yPos = Random.Range(yMin, yMax);
 
             grounds[currentIndex].SetActive(false);
             grounds[currentIndex].SetActive(true);  // 비활성화했다가 바로 다시 활성화시킴 (OnEnable 함수 실행)
