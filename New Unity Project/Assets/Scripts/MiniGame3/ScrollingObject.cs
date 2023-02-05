@@ -16,7 +16,7 @@ public class ScrollingObject : MonoBehaviour
     {
         if (!gameOver)
         {
-            transform.Translate(5f * Vector3.left * speed * Time.deltaTime);
+            transform.Translate(20f * Vector3.left * speed * Time.deltaTime);
         }
 
 
