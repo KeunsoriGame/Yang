@@ -25,9 +25,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyA()
+    public void KeyA() //MIC
     {
-        if(Input.GetKeyDown("a"))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             if (state.transform.GetChild(correctNumber).name == "A(Clone)")
             {
@@ -56,9 +56,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyB()
+    public void KeyB() //EG
     {
-        if (Input.GetKeyDown("b"))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (state.transform.GetChild(correctNumber).name == "B(Clone)")
             {
@@ -86,9 +86,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyC()
+    public void KeyC() //AG
     {
-        if (Input.GetKeyDown("c"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (state.transform.GetChild(correctNumber).name == "C(Clone)")
             {
@@ -118,9 +118,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyD()
+    public void KeyD() //B
     {
-        if (Input.GetKeyDown("d"))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             ButtonSound.GetComponent<ButtonAudioController>().BassSound();
             if (state.transform.GetChild(correctNumber).name == "D(Clone)")
@@ -151,9 +151,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyE()
+    public void KeyE() //K
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             ButtonSound.GetComponent<ButtonAudioController>().KeyboardSound();
             if (state.transform.GetChild(correctNumber).name == "E(Clone)")
@@ -184,9 +184,9 @@ public class JudgeCommand : MonoBehaviour
         }
     }
 
-    public void KeyF()
+    public void KeyF() //D
     {
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             ButtonSound.GetComponent<ButtonAudioController>().DrumSound();
             if (state.transform.GetChild(correctNumber).name == "F(Clone)")
