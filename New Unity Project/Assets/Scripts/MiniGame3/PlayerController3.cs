@@ -36,7 +36,7 @@ public class PlayerController3 : MonoBehaviour
         {
             jumpCount++;
             playerRigidbody.velocity = Vector2.zero; // 점프 직전 속도를 0으로
-            playerRigidbody.AddForce(new Vector2(0, jumpForce));  // 위쪽으로 힘주기
+            playerRigidbody.AddForce(new Vector2(0, jumpForce * 20));  // 위쪽으로 힘주기
 
             //playerAudio.Play();
         }
@@ -44,7 +44,7 @@ public class PlayerController3 : MonoBehaviour
         else if (Input.GetMouseButtonUp(0) && playerRigidbody.velocity.y > 0)
         {
             // 상승 중이면 속도 1/2
-            playerRigidbody.velocity = playerRigidbody.velocity * 0.5f;
+            playerRigidbody.velocity = playerRigidbody.velocity * 0.3f;
         }
 
         animator.SetBool("Grounded", isGrounded);
