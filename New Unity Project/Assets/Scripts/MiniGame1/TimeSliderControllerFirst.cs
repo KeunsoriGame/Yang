@@ -40,6 +40,7 @@ public class TimeSliderControllerFirst: MonoBehaviour
         if (TimeSld.value < TimeSld.maxValue)
         {
             TimeSld.value += Time.deltaTime;
+            //CoinScore.instance.AddCoin(10);
         }
 
         else
