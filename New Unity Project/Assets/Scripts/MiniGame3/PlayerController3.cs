@@ -7,7 +7,7 @@ public class PlayerController3 : MonoBehaviour
     public GameObject gameManager; // 게임 매니저 스크립트
 
     // public AudioClip deathClip;  //게임오버 오디오
-    public float jumpForce = 700f;  // 점프 힘
+    public float jumpForce = 1450f;  // 점프 힘
 
     private int jumpCount = 0; // 점프 횟수
     private bool isGrounded = false; // 바닥에 닿았는지

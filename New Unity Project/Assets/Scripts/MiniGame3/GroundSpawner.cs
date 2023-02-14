@@ -7,12 +7,12 @@ public class GroundSpawner : MonoBehaviour
     public GameObject groundPrefab;
     public int count = 3;  // 생성할 발판 수
 
-    public float timeBetSpawnMin = 1.5f;
-    public float timeBetSpawnMax = 2.5f;
+    public float timeBetSpawnMin = 0.65f;
+    public float timeBetSpawnMax = 0.95f;
     private float timeBetSpawn;
 
     public float[] yPosList = new float[5] { 350f, 380f, 420f, 460f, 500f };
-    private float xPos = 1920f;
+    private float xPos = 2050f;
 
     private GameObject[] grounds;
     private int currentIndex = 0;  // 사용할 현재 발판 인덱스
