@@ -8,7 +8,7 @@ public class GroundSpawner : MonoBehaviour
     public int count = 3;  // 생성할 발판 수
 
     public float timeBetSpawnMin = 0.65f;
-    public float timeBetSpawnMax = 0.95f;
+    public float timeBetSpawnMax = 0.80f;
     private float timeBetSpawn;
 
     public float[] yPosList = new float[5] { 350f, 380f, 420f, 460f, 500f };
@@ -25,6 +25,7 @@ public class GroundSpawner : MonoBehaviour
     {
         grounds = new GameObject[count];
 
+        
         for (int i=0; i<count; i++)
         {
             grounds[i] = Instantiate(groundPrefab, poolPosition, Quaternion.identity) as GameObject;
