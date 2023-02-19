@@ -27,7 +27,7 @@ public class JudgeCommand : MonoBehaviour
 
     public void KeyA() //MIC
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             if (state.transform.GetChild(correctNumber).name == "A(Clone)")
             {
@@ -204,7 +204,7 @@ public class JudgeCommand : MonoBehaviour
 
     private void Update()
     {
-        if (correctNumber >= 36)
+        if(correctNumber >= 36)
         {
             GameObject.Find("Canvas").transform.GetChild(4).gameObject.SetActive(true);
 
@@ -254,10 +254,10 @@ public class JudgeCommand : MonoBehaviour
                 default:
                     break;
             }
-
+            
         }
 
-        if (wrongNumber >= 1)
+        if(wrongNumber >= 1)
         {
             GameObject.Find("Canvas").transform.GetChild(5).gameObject.SetActive(true);
         }
