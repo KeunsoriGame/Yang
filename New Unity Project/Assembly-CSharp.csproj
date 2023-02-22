@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\StartScene\KeyboardStat.cs" />
      <Compile Include="Assets\Scripts\MiniGame1\JudgeCommand.cs" />
      <Compile Include="Assets\Scripts\StartScene\Stat.cs" />
+     <Compile Include="Assets\Scripts\MiniGame1\CoinScore.cs" />
      <Compile Include="Assets\Scripts\StartScene\BassStat.cs" />
      <Compile Include="Assets\Scripts\MiniGame3\ScrollingObject.cs" />
      <Compile Include="Assets\Scripts\MiniGame2\ItemController.cs" />
